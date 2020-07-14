@@ -1,0 +1,32 @@
+body {
+    background: #43f4f4;  
+  }
+  
+  .container {
+    background: #fff;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ccc;
+    width: 800px;
+    height: 500px;
+  }
+  
+   .bar:hover {
+      fill: brown;
+    }
+  
+  #tooltip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    padding: 2px;
+    font: 12px;
+    background: #ccc;
+    box-shadow: 1px 1px 10px;
+    border-radius: 2px;
+    pointer-events: none; }
