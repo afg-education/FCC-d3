@@ -1,32 +1,76 @@
 body {
-    background: #43f4f4;  
+  background: #rgb(237, 245, 252);
+}
+
+header {
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(54, 73, 88);
+  color: #edf5fc;
+  margin-bottom: 20px;
+}
+
+header > * {
+  padding: 0 20px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+}
+
+ul li {
+  list-style: none;
+  padding: 5px 10px;
+}
+
+a, a:visited {
+  border-radius: 10px;
+  background-color: #ffbf00;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #ffc71f;
+}
+
+.container,
+#chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#chart > * {
+  margin: 5px;
+}
+
+ .bar:hover {
+    fill: brown;
   }
-  
-  .container {
-    background: #fff;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    border: 1px solid #ccc;
-    width: 800px;
-    height: 500px;
-  }
-  
-   .bar:hover {
-      fill: brown;
-    }
-  
-  #tooltip {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    text-align: center;
-    width: 150px;
-    height: 50px;
-    padding: 2px;
-    font: 12px;
-    background: #ccc;
-    box-shadow: 1px 1px 10px;
-    border-radius: 2px;
-    pointer-events: none; }
+
+#tooltip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  padding: 2px;
+  font: 12px;
+  background: #ccc;
+  box-shadow: 1px 1px 10px;
+  border-radius: 2px;
+  pointer-events: none; }
+
+.cell-title {
+  font-size: 10px;
+}
